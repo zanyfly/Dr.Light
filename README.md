@@ -5,7 +5,7 @@ the name of Dr.Light is inspird by Dr.Strange, it is a very simple,light kit to 
 ## range of protection
 - fresh ui in nonmain thread.
 - add/remove KVO unpaired
-- pushing viewcontrollers frequently within a short perid.<br/>    for example,add push code in viewDidLoad,before viewDidAppear has called,it is dangerous.It may caused crash "cannot addsubView:self".  
+- pushing viewcontrollers frequently within a short perid.<br/>    for example,add push code in `viewDidLoad`,before `viewDidAppear` has called,it is dangerous.It may caused crash `cannot addsubView:self`.  
 
   pushing the same viewcontroller into one stack.
 
