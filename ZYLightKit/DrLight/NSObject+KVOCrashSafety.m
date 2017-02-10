@@ -10,9 +10,9 @@
 #import "objc/runtime.h"
 
 
-static const void *keypathMapKey;
+static const void *keypathMapKey=&keypathMapKey;
 
-static const void *kvoSafteyToggleKey;
+static const void *kvoSafteyToggleKey=&kvoSafteyToggleKey;
 
 
 @implementation NSObject (KVOCrashSafety)

@@ -7,22 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "NSObject+KVOCrashSafety.h"
-
-@interface School:NSObject
-{
-}
-@property(nonatomic) NSString *schoolName;
-@end
-
-
-@implementation School
-@end
-
 
 @interface ViewController ()
 {
-    School *school;
 }
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @end
@@ -33,11 +20,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    school = [[School alloc] init];
-    school.schoolName = @"First school";
-    school.kvoSafteyToggle = YES;
-    
-    [school addObserver:self forKeyPath:@"schoolName" options:NSKeyValueObservingOptionNew context:nil];
     
 }
 
@@ -57,22 +39,8 @@
 
 }
 
-- (IBAction)action2:(id)sender {
-    
-//    [school addObserver:self forKeyPath:@"schoolName" options:NSKeyValueObservingOptionNew context:nil];
-//    [school addObserver:self forKeyPath:@"schoolName" options:NSKeyValueObservingOptionNew context:nil];
-//
-    [school removeObserver:self forKeyPath:@"schoolName"];
-//    [school removeObserver:self forKeyPath:@"schoolName"];
-//
-//    [school addObserver:self forKeyPath:@"schoolName" options:NSKeyValueObservingOptionNew context:nil];
-
-    
-}
 
 
--(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
-}
 
 
 @end
