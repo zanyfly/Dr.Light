@@ -26,7 +26,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.title=@"crash/corrupt cases";
 
-    itemArr = @[@"fresh ui on dispatch thread",@"nested viewcontroller push", @"add/remove kvo unpaired"];
+    itemArr = @[@"fresh ui on dispatch thread",@"nested viewcontroller push", @"add/remove kvo unpaired", @"unrecognized selector"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -63,6 +63,8 @@
         [self performSegueWithIdentifier:@"nestedpush" sender:nil];
     }else if(indexPath.row == 2){
         [self performSegueWithIdentifier:@"kvopush" sender:nil];
+    }else if(indexPath.row == 3){
+        [self performSegueWithIdentifier:@"uspush" sender:nil];
     }
 }
  

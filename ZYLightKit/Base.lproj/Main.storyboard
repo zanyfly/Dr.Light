@@ -37,6 +37,7 @@
                         <segue destination="BYZ-38-t0r" kind="show" identifier="uithread" id="x1O-uZ-2jw"/>
                         <segue destination="B0N-uw-IqG" kind="show" identifier="nestedpush" id="w7E-Um-bdp"/>
                         <segue destination="BPI-hA-7Xj" kind="show" identifier="kvopush" id="GH4-bG-fTx"/>
+                        <segue destination="FsL-1j-RPi" kind="show" identifier="uspush" id="LRV-Hg-AIi"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tSm-Au-zOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -70,6 +71,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bzW-31-zwv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="399" y="544"/>
+        </scene>
+        <!--Sel View Controller-->
+        <scene sceneID="mbh-Th-qwi">
+            <objects>
+                <viewController id="FsL-1j-RPi" customClass="SelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="edU-8T-GUz"/>
+                        <viewControllerLayoutGuide type="bottom" id="kOH-Sp-dV1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lSC-J7-8hE" customClass="Selv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mkz-Xf-WRU">
+                                <rect key="frame" x="100" y="126" width="175" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="dictionary  objectAtIndex "/>
+                                <connections>
+                                    <action selector="action:" destination="FsL-1j-RPi" eventType="touchUpInside" id="7y1-ZQ-gwN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cjc-o7-mD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="398" y="1283"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Z34-KX-DH9">
