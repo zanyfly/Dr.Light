@@ -68,6 +68,8 @@
 		181C865D1E485A3100EC63F2 /* DrLightDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrLightDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		181C86611E485A3100EC63F2 /* ZYLightKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYLightKitUITests.m; sourceTree = "<group>"; };
 		181C86631E485A3100EC63F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C8BF991E6513E60092A9FD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		18C8BF9A1E6519580092A9FD /* DrLightConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrLightConfig.h; sourceTree = "<group>"; };
 		18F1BF2B1E4AC1F900F46D08 /* NSObject+KVOCrashSafety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVOCrashSafety.h"; sourceTree = "<group>"; };
 		18F1BF2C1E4AC1F900F46D08 /* NSObject+KVOCrashSafety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVOCrashSafety.m"; sourceTree = "<group>"; };
 		18F1BF2D1E4AC1F900F46D08 /* UIView+ViewCrashSafety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewCrashSafety.h"; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				181C863D1E485A3100EC63F2 /* main.m */,
+				18C8BF991E6513E60092A9FD /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				18F1BF2E1E4AC1F900F46D08 /* UIView+ViewCrashSafety.m */,
 				1804722E1E4D502200CA3DF6 /* UINavigationController+NestedPushCrashSafety.h */,
 				1804722F1E4D502200CA3DF6 /* UINavigationController+NestedPushCrashSafety.m */,
+				18C8BF9A1E6519580092A9FD /* DrLightConfig.h */,
 			);
 			path = DrLight;
 			sourceTree = "<group>";
@@ -492,6 +496,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZYLightKit/PrefixHeader.pch";
 				INFOPLIST_FILE = ZYLightKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -505,6 +510,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZYLightKit/PrefixHeader.pch";
 				INFOPLIST_FILE = ZYLightKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

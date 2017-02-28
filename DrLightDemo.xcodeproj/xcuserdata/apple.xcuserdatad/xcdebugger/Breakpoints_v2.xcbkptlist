@@ -18,15 +18,14 @@
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
-            condition = "[keyPath isEqualToString:@&quot;schoolName&quot;]"
             continueAfterRunningActions = "No"
             filePath = "ZYLightKit/DrLight/NSObject+KVOCrashSafety.m"
-            timestampString = "508218764.606957"
+            timestampString = "509940504.90433"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "-zy_addObserver:forKeyPath:options:context:"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "+load"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -36,30 +35,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ZYLightKit/DrLight/UINavigationController+NestedPushCrashSafety.m"
-            timestampString = "508406821.961931"
+            filePath = "ZYLightKit/DrLight/DrLight.h"
+            timestampString = "509940978.368352"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "-setNavStackLastChangedTime:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ZYLightKit/DrLight/UINavigationController+NestedPushCrashSafety.m"
-            timestampString = "508407042.965438"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "-navStackLastChangedTime"
-            landmarkType = "7">
+            startingLineNumber = "12"
+            endingLineNumber = "12">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

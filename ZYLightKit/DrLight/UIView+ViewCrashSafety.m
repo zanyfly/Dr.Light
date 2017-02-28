@@ -8,6 +8,7 @@
 
 #import "UIView+ViewCrashSafety.h"
 #import <objc/runtime.h>
+#import "DrLightConfig.h"
 
 @implementation UIView (ViewCrashSafety)
 
@@ -25,35 +26,12 @@
     
 }
 
-+(void)swizzle:(SEL)originalSelector swizzledSelector:(SEL)swizzledSelector{
-    Class class = [self class];
-
-    Method originalMethod = class_getInstanceMethod(class, originalSelector);
-    Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
-    
-    BOOL didAddMethod =
-    class_addMethod(class,
-                    originalSelector,
-                    method_getImplementation(swizzledMethod),
-                    method_getTypeEncoding(swizzledMethod));
-    
-    if (didAddMethod) {
-        class_replaceMethod(class,
-                            swizzledSelector,
-                            method_getImplementation(originalMethod),
-                            method_getTypeEncoding(originalMethod));
-    } else {
-        method_exchangeImplementations(originalMethod, swizzledMethod);
-    }
-
-}
-
 +(void)swizzleSetNeedsLayout{
     
     SEL originalSelector = @selector(setNeedsLayout);
     SEL swizzledSelector = @selector(zy_setNeedsLayout);
 
-    [self swizzle:originalSelector swizzledSelector:swizzledSelector];
+    DL_SWIZZLE(originalSelector,swizzledSelector)
 }
 
 +(void)swizzleSetNeedsDisplay{
@@ -61,7 +39,7 @@
     SEL originalSelector = @selector(setNeedsDisplay);
     SEL swizzledSelector = @selector(zy_setNeedsDisplay);
  
-    [self swizzle:originalSelector swizzledSelector:swizzledSelector];
+    DL_SWIZZLE(originalSelector,swizzledSelector)
 
 }
 
@@ -70,7 +48,7 @@
     SEL originalSelector = @selector(setNeedsDisplayInRect:);
     SEL swizzledSelector = @selector(zy_setNeedsDisplayInRect:);
     
-    [self swizzle:originalSelector swizzledSelector:swizzledSelector];
+    DL_SWIZZLE(originalSelector,swizzledSelector)
     
 }
 
@@ -79,7 +57,7 @@
     SEL originalSelector = @selector(setNeedsUpdateConstraints);
     SEL swizzledSelector = @selector(zy_setNeedsUpdateConstraints);
     
-    [self swizzle:originalSelector swizzledSelector:swizzledSelector];
+    DL_SWIZZLE(originalSelector,swizzledSelector)
     
 }
 

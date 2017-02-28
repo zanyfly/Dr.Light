@@ -8,6 +8,7 @@
 
 #import "UINavigationController+NestedPushCrashSafety.h"
 #import <objc/runtime.h>
+#import "DrLightConfig.h"
 
 
 static const void *navStackChangeIntervalKey=&navStackChangeIntervalKey;
@@ -62,36 +63,12 @@ static const void *navStackLastChangedTimeKey=&navStackLastChangedTimeKey;
 }
 
 
-
-+(void)swizzle:(SEL)originalSelector swizzledSelector:(SEL)swizzledSelector{
-    Class class = [self class];
-    
-    Method originalMethod = class_getInstanceMethod(class, originalSelector);
-    Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
-    
-    BOOL didAddMethod =
-    class_addMethod(class,
-                    originalSelector,
-                    method_getImplementation(swizzledMethod),
-                    method_getTypeEncoding(swizzledMethod));
-    
-    if (didAddMethod) {
-        class_replaceMethod(class,
-                            swizzledSelector,
-                            method_getImplementation(originalMethod),
-                            method_getTypeEncoding(originalMethod));
-    } else {
-        method_exchangeImplementations(originalMethod, swizzledMethod);
-    }
-    
-}
-
 +(void)swizzlePushViewController{
     
     SEL originalSelector = @selector(pushViewController:animated:);
     SEL swizzledSelector = @selector(zy_pushViewController:animated:);
     
-    [self swizzle:originalSelector swizzledSelector:swizzledSelector];
+    DL_SWIZZLE(originalSelector,swizzledSelector)
 }
 
 -(void)zy_pushViewController:(UIViewController *)viewController animated:(BOOL)animated{

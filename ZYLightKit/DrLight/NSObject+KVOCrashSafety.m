@@ -8,7 +8,7 @@
 
 #import "NSObject+KVOCrashSafety.h"
 #import "objc/runtime.h"
-
+#import "DrLightConfig.h"
 
 static const void *keypathMapKey=&keypathMapKey;
 
@@ -49,6 +49,8 @@ static const void *kvoSafteyToggleKey=&kvoSafteyToggleKey;
 }
 
 
+#ifndef DRLIGHT_TOGGLE_CLOSED
+
 +(void)load{
     
     static dispatch_once_t onceToken;
@@ -61,38 +63,14 @@ static const void *kvoSafteyToggleKey=&kvoSafteyToggleKey;
     
 }
 
-
-+(void)swizzle:(SEL)originalSelector swizzledSelector:(SEL)swizzledSelector{
-    Class class = [self class];
-    
-    Method originalMethod = class_getInstanceMethod(class, originalSelector);
-    Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
-    
-    BOOL didAddMethod =
-    class_addMethod(class,
-                    originalSelector,
-                    method_getImplementation(swizzledMethod),
-                    method_getTypeEncoding(swizzledMethod));
-    
-    if (didAddMethod) {
-        class_replaceMethod(class,
-                            swizzledSelector,
-                            method_getImplementation(originalMethod),
-                            method_getTypeEncoding(originalMethod));
-    } else {
-        method_exchangeImplementations(originalMethod, swizzledMethod);
-    }
-    
-}
+#endif
 
 +(void)swizzleAddObserver{
     
     SEL originalSelector = @selector(addObserver:forKeyPath:options:context:);
     SEL swizzledSelector = @selector(zy_addObserver:forKeyPath:options:context:);
     
-    [[self class] swizzle:originalSelector swizzledSelector:swizzledSelector];
-    
-    
+    DL_SWIZZLE(originalSelector,swizzledSelector)
 }
 
 +(void)swizzleRemoveObserver{
@@ -100,8 +78,7 @@ static const void *kvoSafteyToggleKey=&kvoSafteyToggleKey;
     SEL originalSelector = @selector(removeObserver:forKeyPath:);
     SEL swizzledSelector = @selector(zy_removeObserver:forKeyPath:);
     
-    [[self class] swizzle:originalSelector swizzledSelector:swizzledSelector];
-    
+    DL_SWIZZLE(originalSelector,swizzledSelector)
     
 }
 
