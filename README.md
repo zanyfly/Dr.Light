@@ -1,4 +1,6 @@
-# Dr.Light
+![](http://7xv1kz.com1.z0.glb.clouddn.com/180.png)
+
+# Introduction
 
 the name of Dr.Light is inspird by Dr.Strange, it is a very simple,light kit to avoid crash in some cases.
 
@@ -8,9 +10,10 @@ the name of Dr.Light is inspird by Dr.Strange, it is a very simple,light kit to 
 - pushing viewcontrollers frequently within a short perid.<br/>    for example,add push code in `viewDidLoad`,before `viewDidAppear` has called,it is dangerous.It may caused crash `cannot addsubView:self`.  
 
   pushing the same viewcontroller into one stack.
+- send unrecognized selector
 
 
-## useage
+## Useage
 
 ### ui thread-safety
 
@@ -40,6 +43,11 @@ school.kvoSafteyToggle = YES;
 self.navigationController.navStackChangeInterval = 0.1;
 ```
 
+###  unrecognized selector safety
+ include `NSObject+SelectorCrashSafety.h`、`NSObject+SelectorCrashSafety.m` in your project.
+
+## Note 
+the safaty toggle closed by default in debug mode in order to discover crash problems in the development phase. If you are eager to turn on the protection in debug mode, please comment out this line of code `#define DRLIGHT_TOGGLE_CLOSED`.
 
 
 ## Contact 
