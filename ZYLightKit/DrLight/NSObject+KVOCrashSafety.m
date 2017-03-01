@@ -47,9 +47,9 @@ static const void *kvoSafteyToggleKey=&kvoSafteyToggleKey;
     objc_setAssociatedObject(self, &kvoSafteyToggleKey, @(on), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 
 }
-
-
-#ifndef DRLIGHT_TOGGLE_CLOSED
+//
+#if (defined(DEBUG) && defined(DRLIGHT_TOGGLE_CLOSED))
+#else
 
 +(void)load{
     
@@ -62,8 +62,8 @@ static const void *kvoSafteyToggleKey=&kvoSafteyToggleKey;
     });
     
 }
-
 #endif
+
 
 +(void)swizzleAddObserver{
     

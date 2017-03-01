@@ -34,14 +34,13 @@
 void emptyMethodIMP(){
 }
 
-
-
 @end
 
 
 @implementation NSObject (SelectorCrashSafety)
 
-#ifndef DRLIGHT_TOGGLE_CLOSED
+#if (defined(DEBUG) && defined(DRLIGHT_TOGGLE_CLOSED))
+#else
 
 +(void)load{
     

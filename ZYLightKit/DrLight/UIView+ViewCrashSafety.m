@@ -12,6 +12,9 @@
 
 @implementation UIView (ViewCrashSafety)
 
+#if (defined(DEBUG) && defined(DRLIGHT_TOGGLE_CLOSED))
+#else
+
 +(void)load{
     
     static dispatch_once_t onceToken;
@@ -25,6 +28,9 @@
     });
     
 }
+
+#endif
+
 
 +(void)swizzleSetNeedsLayout{
     

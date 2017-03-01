@@ -13,14 +13,7 @@
 
 //the safaty toggle closed by default in debug mode in order to discover crash problems in the development phase. If you are eager to turn on the protection in debug mode, please comment out this line of code '#define DRLIGHT_TOGGLE_CLOSED'.
 
-
-#ifdef DEBUG
-
 //#define DRLIGHT_TOGGLE_CLOSED
 
-#endif
-
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 #endif /* PrefixHeader_pch */
