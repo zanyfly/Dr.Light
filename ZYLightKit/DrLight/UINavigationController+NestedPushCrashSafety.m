@@ -17,6 +17,9 @@ static const void *navStackLastChangedTimeKey=&navStackLastChangedTimeKey;
 
 @implementation UINavigationController (NestedPushCrashSafety)
 
+#if (defined(DEBUG) && defined(DRLIGHT_TOGGLE_CLOSED))
+#else
+
 +(void)load{
     
     static dispatch_once_t onceToken;
@@ -27,6 +30,9 @@ static const void *navStackLastChangedTimeKey=&navStackLastChangedTimeKey;
     });
     
 }
+
+#endif
+
 
 - (NSTimeInterval)navStackChangeInterval
 {
