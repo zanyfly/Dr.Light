@@ -1,4 +1,4 @@
-![](http://7xv1kz.com1.z0.glb.clouddn.com/180.png)
+![](http://7xv1kz.com1.z0.glb.clouddn.com/180.png)<br/> 
 # Introduction
 [中文详解](https://github.com/zanyfly/Dr.Light/blob/master/中文介绍.md)
 the name of Dr.Light is inspird by Dr.Strange, it is a very simple,light kit to avoid crash in some cases.
