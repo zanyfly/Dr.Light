@@ -33,13 +33,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ZYLightKit/DrLight/NSObject+KVOCrashSafety.m"
-            timestampString = "510028038.265784"
+            filePath = "ZYLightKit/DrLight/NSObject+SelectorCrashSafety.m"
+            timestampString = "510126730.036973"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "+load"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "+swizzleFI"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
