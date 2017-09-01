@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.summary      = "a very simple,light kit to avoid crash in some cases"
   s.description  = "fresh ui in nonmain thread.add/remove KVO unpaired.pushing viewcontrollers frequently within a short perid.for example,add push code in viewDidLoad,before viewDidAppear has called,it is dangerous.It may caused crash cannot addsubView:self.pushing the same viewcontroller into one stack.send unrecognized selector"
   s.homepage     = "https://github.com/zanyfly/Dr.Light"
-  s.license      = "MIT"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "ivan" => "zanyfly@126.com" }
   s.platform     = :ios
   s.source       = { :git => "https://github.com/zanyfly/Dr.Light.git", :tag => "#{s.version}" }
