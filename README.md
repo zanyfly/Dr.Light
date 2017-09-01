@@ -54,6 +54,6 @@ I'll add more features in a later release，you can contact me zanyfly@126.com.
 
 ## License
 
-KVOController is released under a BSD License. See LICENSE file for details.
+DrLight is released under a BSD License. See LICENSE file for details.
 
 
