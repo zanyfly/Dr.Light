@@ -10,7 +10,6 @@
 		180472261E4C58B200CA3DF6 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180472251E4C58B200CA3DF6 /* IndexViewController.m */; };
 		1804722A1E4C5C3E00CA3DF6 /* NestedViewControllerA.m in Sources */ = {isa = PBXBuildFile; fileRef = 180472291E4C5C3E00CA3DF6 /* NestedViewControllerA.m */; };
 		1804722D1E4C5D0C00CA3DF6 /* NestedViewControllerB.m in Sources */ = {isa = PBXBuildFile; fileRef = 1804722C1E4C5D0C00CA3DF6 /* NestedViewControllerB.m */; };
-		180472301E4D502200CA3DF6 /* UINavigationController+NestedPushCrashSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 1804722F1E4D502200CA3DF6 /* UINavigationController+NestedPushCrashSafety.m */; };
 		180472341E4DA32000CA3DF6 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180472331E4DA32000CA3DF6 /* KVOViewController.m */; };
 		181C863E1E485A3100EC63F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C863D1E485A3100EC63F2 /* main.m */; };
 		181C86411E485A3100EC63F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C86401E485A3100EC63F2 /* AppDelegate.m */; };
@@ -20,10 +19,11 @@
 		181C864C1E485A3100EC63F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181C864A1E485A3100EC63F2 /* LaunchScreen.storyboard */; };
 		181C86571E485A3100EC63F2 /* ZYLightKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C86561E485A3100EC63F2 /* ZYLightKitTests.m */; };
 		181C86621E485A3100EC63F2 /* ZYLightKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C86611E485A3100EC63F2 /* ZYLightKitUITests.m */; };
-		18C8BFA01E651F560092A9FD /* NSObject+SelectorCrashSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8BF9F1E651F560092A9FD /* NSObject+SelectorCrashSafety.m */; };
 		18C8BFA41E6529F70092A9FD /* SelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8BFA31E6529F70092A9FD /* SelViewController.m */; };
-		18F1BF2F1E4AC1F900F46D08 /* NSObject+KVOCrashSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F1BF2C1E4AC1F900F46D08 /* NSObject+KVOCrashSafety.m */; };
-		18F1BF301E4AC1F900F46D08 /* UIView+ViewCrashSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F1BF2E1E4AC1F900F46D08 /* UIView+ViewCrashSafety.m */; };
+		6F31895E1F59006D00D6DF6F /* NSObject+KVOCrashSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3189571F59006D00D6DF6F /* NSObject+KVOCrashSafety.m */; };
+		6F31895F1F59006D00D6DF6F /* NSObject+SelectorCrashSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3189591F59006D00D6DF6F /* NSObject+SelectorCrashSafety.m */; };
+		6F3189601F59006D00D6DF6F /* UINavigationController+NestedPushCrashSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F31895B1F59006D00D6DF6F /* UINavigationController+NestedPushCrashSafety.m */; };
+		6F3189611F59006D00D6DF6F /* UIView+ViewCrashSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F31895D1F59006D00D6DF6F /* UIView+ViewCrashSafety.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +50,6 @@
 		180472291E4C5C3E00CA3DF6 /* NestedViewControllerA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NestedViewControllerA.m; sourceTree = "<group>"; };
 		1804722B1E4C5D0C00CA3DF6 /* NestedViewControllerB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NestedViewControllerB.h; sourceTree = "<group>"; };
 		1804722C1E4C5D0C00CA3DF6 /* NestedViewControllerB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NestedViewControllerB.m; sourceTree = "<group>"; };
-		1804722E1E4D502200CA3DF6 /* UINavigationController+NestedPushCrashSafety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+NestedPushCrashSafety.h"; sourceTree = "<group>"; };
-		1804722F1E4D502200CA3DF6 /* UINavigationController+NestedPushCrashSafety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+NestedPushCrashSafety.m"; sourceTree = "<group>"; };
 		180472321E4DA32000CA3DF6 /* KVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
 		180472331E4DA32000CA3DF6 /* KVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
 		181C86391E485A3100EC63F2 /* DrLightDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrLightDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,15 +69,17 @@
 		181C86611E485A3100EC63F2 /* ZYLightKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYLightKitUITests.m; sourceTree = "<group>"; };
 		181C86631E485A3100EC63F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18C8BF991E6513E60092A9FD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		18C8BF9A1E6519580092A9FD /* DrLightConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrLightConfig.h; sourceTree = "<group>"; };
-		18C8BF9E1E651F560092A9FD /* NSObject+SelectorCrashSafety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SelectorCrashSafety.h"; sourceTree = "<group>"; };
-		18C8BF9F1E651F560092A9FD /* NSObject+SelectorCrashSafety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SelectorCrashSafety.m"; sourceTree = "<group>"; };
 		18C8BFA21E6529F70092A9FD /* SelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelViewController.h; sourceTree = "<group>"; };
 		18C8BFA31E6529F70092A9FD /* SelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelViewController.m; sourceTree = "<group>"; };
-		18F1BF2B1E4AC1F900F46D08 /* NSObject+KVOCrashSafety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVOCrashSafety.h"; sourceTree = "<group>"; };
-		18F1BF2C1E4AC1F900F46D08 /* NSObject+KVOCrashSafety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVOCrashSafety.m"; sourceTree = "<group>"; };
-		18F1BF2D1E4AC1F900F46D08 /* UIView+ViewCrashSafety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewCrashSafety.h"; sourceTree = "<group>"; };
-		18F1BF2E1E4AC1F900F46D08 /* UIView+ViewCrashSafety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewCrashSafety.m"; sourceTree = "<group>"; };
+		6F3189551F59006D00D6DF6F /* DrLightConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrLightConfig.h; sourceTree = "<group>"; };
+		6F3189561F59006D00D6DF6F /* NSObject+KVOCrashSafety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVOCrashSafety.h"; sourceTree = "<group>"; };
+		6F3189571F59006D00D6DF6F /* NSObject+KVOCrashSafety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVOCrashSafety.m"; sourceTree = "<group>"; };
+		6F3189581F59006D00D6DF6F /* NSObject+SelectorCrashSafety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SelectorCrashSafety.h"; sourceTree = "<group>"; };
+		6F3189591F59006D00D6DF6F /* NSObject+SelectorCrashSafety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SelectorCrashSafety.m"; sourceTree = "<group>"; };
+		6F31895A1F59006D00D6DF6F /* UINavigationController+NestedPushCrashSafety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+NestedPushCrashSafety.h"; sourceTree = "<group>"; };
+		6F31895B1F59006D00D6DF6F /* UINavigationController+NestedPushCrashSafety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+NestedPushCrashSafety.m"; sourceTree = "<group>"; };
+		6F31895C1F59006D00D6DF6F /* UIView+ViewCrashSafety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewCrashSafety.h"; sourceTree = "<group>"; };
+		6F31895D1F59006D00D6DF6F /* UIView+ViewCrashSafety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewCrashSafety.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +132,7 @@
 		181C86301E485A3100EC63F2 = {
 			isa = PBXGroup;
 			children = (
+				6F3189541F59006D00D6DF6F /* DrLight */,
 				181C863B1E485A3100EC63F2 /* Dr.Light */,
 				181C86551E485A3100EC63F2 /* ZYLightKitTests */,
 				181C86601E485A3100EC63F2 /* ZYLightKitUITests */,
@@ -152,7 +153,6 @@
 		181C863B1E485A3100EC63F2 /* Dr.Light */ = {
 			isa = PBXGroup;
 			children = (
-				18F1BF2A1E4AC1F900F46D08 /* DrLight */,
 				181C863F1E485A3100EC63F2 /* AppDelegate.h */,
 				181C86401E485A3100EC63F2 /* AppDelegate.m */,
 				180472241E4C58B200CA3DF6 /* IndexViewController.h */,
@@ -206,18 +206,18 @@
 			name = "Selector cases";
 			sourceTree = "<group>";
 		};
-		18F1BF2A1E4AC1F900F46D08 /* DrLight */ = {
+		6F3189541F59006D00D6DF6F /* DrLight */ = {
 			isa = PBXGroup;
 			children = (
-				18F1BF2B1E4AC1F900F46D08 /* NSObject+KVOCrashSafety.h */,
-				18F1BF2C1E4AC1F900F46D08 /* NSObject+KVOCrashSafety.m */,
-				18F1BF2D1E4AC1F900F46D08 /* UIView+ViewCrashSafety.h */,
-				18F1BF2E1E4AC1F900F46D08 /* UIView+ViewCrashSafety.m */,
-				1804722E1E4D502200CA3DF6 /* UINavigationController+NestedPushCrashSafety.h */,
-				1804722F1E4D502200CA3DF6 /* UINavigationController+NestedPushCrashSafety.m */,
-				18C8BF9E1E651F560092A9FD /* NSObject+SelectorCrashSafety.h */,
-				18C8BF9F1E651F560092A9FD /* NSObject+SelectorCrashSafety.m */,
-				18C8BF9A1E6519580092A9FD /* DrLightConfig.h */,
+				6F3189551F59006D00D6DF6F /* DrLightConfig.h */,
+				6F3189561F59006D00D6DF6F /* NSObject+KVOCrashSafety.h */,
+				6F3189571F59006D00D6DF6F /* NSObject+KVOCrashSafety.m */,
+				6F3189581F59006D00D6DF6F /* NSObject+SelectorCrashSafety.h */,
+				6F3189591F59006D00D6DF6F /* NSObject+SelectorCrashSafety.m */,
+				6F31895A1F59006D00D6DF6F /* UINavigationController+NestedPushCrashSafety.h */,
+				6F31895B1F59006D00D6DF6F /* UINavigationController+NestedPushCrashSafety.m */,
+				6F31895C1F59006D00D6DF6F /* UIView+ViewCrashSafety.h */,
+				6F31895D1F59006D00D6DF6F /* UIView+ViewCrashSafety.m */,
 			);
 			path = DrLight;
 			sourceTree = "<group>";
@@ -355,18 +355,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18F1BF301E4AC1F900F46D08 /* UIView+ViewCrashSafety.m in Sources */,
+				6F31895F1F59006D00D6DF6F /* NSObject+SelectorCrashSafety.m in Sources */,
 				18C8BFA41E6529F70092A9FD /* SelViewController.m in Sources */,
+				6F3189601F59006D00D6DF6F /* UINavigationController+NestedPushCrashSafety.m in Sources */,
 				180472261E4C58B200CA3DF6 /* IndexViewController.m in Sources */,
-				18F1BF2F1E4AC1F900F46D08 /* NSObject+KVOCrashSafety.m in Sources */,
 				1804722D1E4C5D0C00CA3DF6 /* NestedViewControllerB.m in Sources */,
 				181C86441E485A3100EC63F2 /* ViewController.m in Sources */,
+				6F31895E1F59006D00D6DF6F /* NSObject+KVOCrashSafety.m in Sources */,
+				6F3189611F59006D00D6DF6F /* UIView+ViewCrashSafety.m in Sources */,
 				181C86411E485A3100EC63F2 /* AppDelegate.m in Sources */,
 				1804722A1E4C5C3E00CA3DF6 /* NestedViewControllerA.m in Sources */,
 				181C863E1E485A3100EC63F2 /* main.m in Sources */,
-				180472301E4D502200CA3DF6 /* UINavigationController+NestedPushCrashSafety.m in Sources */,
 				180472341E4DA32000CA3DF6 /* KVOViewController.m in Sources */,
-				18C8BFA01E651F560092A9FD /* NSObject+SelectorCrashSafety.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
