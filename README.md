@@ -11,6 +11,12 @@ the name of Dr.Light is inspird by Dr.Strange, it is a very simple,light kit to 
   pushing the same viewcontroller into one stack.
 - send unrecognized selector
 
+## Installation
+
+### CocoaPods
+ pod 'DrLight'
+### Manual 
+import the files you needed into your project.
 
 ## Useage
 
