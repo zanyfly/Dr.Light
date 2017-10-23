@@ -74,12 +74,19 @@ void emptyMethodIMP(){
 
 
 - (NSMethodSignature *)zy_methodSignatureForSelector:(SEL)sel{
-    
+
     NSMethodSignature *sig;
     sig = [self zy_methodSignatureForSelector:sel];
     if (sig) {
         return sig;
     }
+    
+    //donnot handle system uikeyboard selectors
+    if ([NSStringFromClass([self class]) containsString:@"UIKeyboard"]
+        ) {
+        return [self zy_methodSignatureForSelector:sel];
+    }
+    
     
     sig = [[_UnregSelObjectProxy sharedInstance] zy_methodSignatureForSelector:sel];
     if (sig){

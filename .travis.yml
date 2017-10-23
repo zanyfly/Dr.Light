@@ -1,0 +1,2 @@
+language: objective-c
+script: xcodebuild -project DrLightDemo.xcodeproj -target DrLightDemo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
